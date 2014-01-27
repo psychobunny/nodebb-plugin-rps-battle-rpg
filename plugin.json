@@ -1,0 +1,16 @@
+{
+	"id": "nodebb-plugin-rps-battle-rpg",
+	"name": "NodeBB RPS Battle RPG",
+	"description": "A simple combat and levelling up system for NodeBB.",
+	"url": "https://github.com/psychobunny/nodebb-plugin-rps-battle-rpg",
+	"library": "./library.js",
+	"hooks": [
+		{
+			"hook": "filter:messaging.parse", "method": "parse", "callbacked": true
+		}
+	],
+	"staticDir": "./public",
+	"css": [
+		"style.css"
+	]
+}

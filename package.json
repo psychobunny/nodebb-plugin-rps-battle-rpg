@@ -1,0 +1,32 @@
+{
+  "name": "nodebb-plugin-rps-battle-rpg",
+  "version": "0.0.1",
+  "description": "A simple combat and levelling up system for NodeBB.",
+  "main": "library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-plugin-rps-battle-rpg"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "rpg",
+    "battle",
+    "rps"
+  ],
+  "author": {
+    "name": "psychobunny",
+    "email": "psycho.bunny@hotmail.com"
+  },
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/psychobunny/nodebb-plugin-rps-battle-rpg/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-plugin-rps-battle-rpg@0.0.1",
+  "_from": "nodebb-plugin-rps-battle-rpg@~0.0.1"
+}
