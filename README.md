@@ -1,6 +1,8 @@
 # NodeBB RPS Battle RPG
 
-A simple combat and levelling up system for NodeBB. Attack other users in chat by typing:
+A simple PvP combat and levelling up system for NodeBB.
+
+Attack other users in chat by typing:
 
 `/cast`
 `/attack`
@@ -25,7 +27,7 @@ Level 1 - Shoot. From the darkness, let fly a piercing arrow into your opponent'
 
 
 
-![rpg](http://i.imgur.com/2FxpdsV.png)
+![rpg](http://i.imgur.com/hhGaP6I.png)
 
 ## Installation
 
