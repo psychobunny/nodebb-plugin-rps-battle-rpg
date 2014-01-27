@@ -59,17 +59,17 @@
 					var message = spells[fromMove][fromLevel]['draw'];
 					chatData.parsedMessage = message.replace('%1', fromUsername).replace('%2', toUsername) + ' <b>Draw!</b>';
 				} else {
-					var youWin = fromMove === 'cast' && toMove === 'attack' || fromMove === 'attack' && toMove === 'stealth' || fromMove === 'stealth' && toMove === 'cast';
+					var youLose = fromMove === 'cast' && toMove === 'attack' || fromMove === 'attack' && toMove === 'stealth' || fromMove === 'stealth' && toMove === 'cast';
 
-					var fromAbility = spells[fromMove][fromLevel][youWin ? 'offend' : 'defend'],
-						toAbility = spells[toMove][toLevel][!youWin ? 'offend' : 'defend'],
+					var fromAbility = spells[fromMove][fromLevel][youLose ? 'offend' : 'defend'],
+						toAbility = spells[toMove][toLevel][!youLose ? 'offend' : 'defend'],
 						fromMessage = fromAbility.replace('%1', fromUsername).replace('%2', toUsername),
 						toMessage = toAbility.replace('%1', toUsername).replace('%2', fromUsername);
 
-					if (youWin) {
-						chatData.parsedMessage = fromMessage + ', but ' + toMessage + ' <b>' + chatData.myUserData.username + ' wins!</b>';
+					if (youLose) {
+						chatData.parsedMessage = fromMessage + ', but ' + toMessage + ' <b>' + chatData.toUserData.username + ' wins!</b>';
 					} else {
-						chatData.parsedMessage = toMessage + ', but ' + fromMessage + ' <b>' + chatData.toUserData.username + ' wins!</b>';
+						chatData.parsedMessage = toMessage + ', but ' + fromMessage + ' <b>' + chatData.myUserData.username + ' wins!</b>';
 					}
 				}
 
