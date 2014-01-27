@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-rps-battle-rpg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple combat and levelling up system for NodeBB.",
   "main": "library.js",
   "scripts": {
